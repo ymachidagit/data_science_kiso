@@ -39,10 +39,16 @@ ax1 = fig.add_subplot(111)
 ax1.plot(x, y, 'o')
 
 # 求めた単回帰分析の結果(直線)を描画
-x_linspace = pd.DataFrame(np.linspace(x.min(), x.max(), 100), columns=['熊谷市の最高気温(℃)'])
+x_linspace = pd.DataFrame(np.linspace(x.min(), x.max(), 100), columns=['最高気温(℃)'])
 ax1.plot(x_linspace, model_p1.predict(x_linspace))
 
 # 多項式回帰分析の結果(曲線)を描画
 x_linspace_pf = pf.fit_transform(x_linspace)
 y_pred = model_p2.predict(x_linspace_pf)
 ax1.plot(x_linspace, y_pred)
+
+ax1.set_title("2020年1月の最高気温と電力需要",size=16,fontname="MS Gothic")
+ax1.set_xlabel("最高気温[℃]",size=12,fontname="MS Gothic")
+ax1.set_ylabel("東京エリア需要[万kWh]",size=12,fontname="MS Gothic")
+
+plt.show()

@@ -25,7 +25,7 @@ weather_data = weather_df[(datetime.datetime(year,month,1) <= weather_df['年月
 weather_target = weather_df[(datetime.datetime(year,month,1) <= weather_df['年月日']) 
                             & (weather_df['年月日'] < datetime.datetime(year,month+1,1))][target].values
 
-excel_path='C:/Users/ymach/OneDrive/ドキュメント/データサイエンス基礎/課題10_表.xlsx'
+excel_path='kadai10_table.xlsx'
 book=openpyxl.load_workbook(filename=excel_path)
 sheet=book['Sheet1']
 
@@ -74,5 +74,5 @@ def random_forest_f1(end_depth, end_estimator):
 print('ランダムフォレストの木の数・深さと精度')
 random_forest_f1(end_depth=7, end_estimator=10)
 
-book.save(filename='C:/Users/ymach/OneDrive/ドキュメント/データサイエンス基礎/課題10_表_rev.xlsx')
+book.save(filename='kadai10_table_rev.xlsx')
 book.close()

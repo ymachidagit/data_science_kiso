@@ -104,6 +104,6 @@ def pred_nikkei_stock_average():
 
 #autocorrelation_graph()
 #check_acorr(1000)
-#decompose_graph()
+decompose_graph()
 #autoARIMA()
 #pred_nikkei_stock_average()

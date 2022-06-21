@@ -74,5 +74,5 @@ def random_forest_f1(end_depth, end_estimator):
 print('ランダムフォレストの木の数・深さと精度')
 random_forest_f1(end_depth=7, end_estimator=10)
 
-book.save(filename='kadai10_table_rev.xlsx')
+book.save('kadai10_table_rev.xlsx')
 book.close()

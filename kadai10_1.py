@@ -82,9 +82,9 @@ def random_forest_f1(end_depth, end_estimator):
             print('f1_score: '+str(_f1_score))
         print()
 
-# decision_tree(max_d=5)
-# random_forest(end_depth=5, end_estimator=10)
-# feature_importances_calculator(n_est=8,max_d=4)
+decision_tree(max_d=5)
+random_forest(end_depth=5, end_estimator=10)
+feature_importances_calculator(n_est=8,max_d=4)
 
 # print('決定木の深さと精度')
 # for i in range(1,7):
@@ -92,5 +92,5 @@ def random_forest_f1(end_depth, end_estimator):
 
 # print()
 
-print('ランダムフォレストの木の数・深さと精度')
-random_forest_f1(end_depth=7, end_estimator=10)
+# print('ランダムフォレストの木の数・深さと精度')
+# random_forest_f1(end_depth=7, end_estimator=10)

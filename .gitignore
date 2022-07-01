@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 *.xlsx
-*.csv
-.ipynb
+iris_setosa.csv
+iris.csv
